@@ -1,36 +1,16 @@
-# Escrow Payment System | Solidity & Ethereum
+# React + Vite
 
-A blockchain-based escrow payment system developed using Solidity and deployed on the Ethereum Sepolia testnet. The smart contract securely holds a buyer's ETH until the buyer authorizes payment to the seller, with a deadline-based refund mechanism if the transaction is not completed.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Features
-- **Secure Deposits:** Accepts and holds ETH in a smart contract.
-- **Controlled Payments:** Allows only the buyer to authorize the release of funds to the seller.
-- **Deadline-Based Refunds:** Enables the buyer to reclaim deposited funds after the deadline if payment has not been released.
-- **Access Control:** Restricts sensitive operations to the authorized buyer.
-- **Transaction Events:** Emits events for deposits, payment releases, and refunds.
-- **Balance Tracking:** Provides a function to check the contract's ETH balance.
-- **Blockchain Deployment:** Supports deployment and testing on Ethereum Sepolia.
+Currently, two official plugins are available:
 
-## Tech Stack
-- Solidity
-- Ethereum Blockchain
-- Remix IDE
-- MetaMask
-- Ethereum Sepolia Testnet
-- Sepolia Etherscan
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## How It Works
-1. Deploy the smart contract with the seller's wallet address and an escrow deadline.
-2. The buyer deposits ETH into the contract.
-3. The buyer authorizes the release of funds to the seller after the agreed conditions are met.
-4. If the deadline passes before payment is released, the buyer can request a refund.
-5. All successful transactions are recorded on the blockchain.
+## React Compiler
 
-## Learning Outcomes
-- Smart contract development using Solidity.
-- Ether transfers and payable functions.
-- Access control and transaction-state management.
-- Blockchain deployment and transaction verification.
-- Testing smart contract functions using Remix IDE.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-**Note:** This project is an educational prototype and has not been audited for production use.
+## Expanding the Oxlint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
